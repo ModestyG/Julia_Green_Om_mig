@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/paperBg.jpeg);
+}
+
+#top-div {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.line {
+  border-style: double;
+  height: 0px;
+  margin: 30px;
+  width: auto;
+}
+
+#top-line {
+  width: calc(50% - 160px);
+}
+
+#overlay {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 100px);
+  border-radius: 50%;
+}
+
+#pfp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.pfp-container:hover #overlay {
+  opacity: 0;
+}
+
+.styled-image {
+  width: 300px;
+  border-style: double;
+  border-width: 5px;
+}
+
+.styled-image.large {
+  width: 600px;
+}
+
+#arrow {
+  width: 300px;
+}
+
+.styled-text {
+  font-family: "Gabarito", cursive;
+  font-size: xx-large;
+}
+
+p {
+  width: auto;
+  padding: 10px;
+}
+
+h2 {
+  top: 25px;
+  position: sticky;
+  display: inline-block;
+  width: calc(100% - 60px);
+  border-bottom: 4px double;
+  margin: 0 30px 50px 30px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 110px;
+  margin-top: -110px;
+}
+
+section.full {
+  flex-direction: column;
+  text-align: center;
+}
+
+.flipped-image {
+  transform: rotate(180deg);
+}
+
+table {
+  width: 80%;
+  background-color: rgb(177, 187, 197);
+  border: 5px solid rgb(29, 36, 42);
+  border-radius: 4px;
+}
+
+td {
+  width: 33%;
+  padding: 10px;
+}
+
+td.six {
+  background-color: rgb(88, 170, 37);
+}
+td.seven {
+  background-color: rgb(21, 184, 21);
+}
+
+tfoot {
+  background-color: rgb(120, 132, 145);
+}
+thead {
+  background-color: rgb(120, 132, 145);
+}
+
+footer {
+  background-color: rgb(177, 187, 197);
+  display: flex;
+}
+
+nav {
+  display: flex;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  width: min-content;
+  width: auto;
+}
+
+input {
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.fields {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding: 2px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    flex-direction: column;
+  }
+  #arrow {
+    display: none;
+  }
+  .styled-image {
+    width: 70%;
+  }
+  .styled-image.large {
+    width: 130%;
+  }
+  .styled-text {
+    font-size: x-large;
+  }
+}
